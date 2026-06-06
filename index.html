@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NMS S V N College AI Assistant</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Floating Open Button -->
+
+<button id="chatToggle" class="chat-toggle">
+<i class="fa-solid fa-robot"></i>
+</button>
+
+<!-- Chat Window -->
+
+<div class="container" id="chatWidget">
+
+<header>
+
+<img src="images/logo.png" class="logo">
+
+<div>
+<h2>NMS S V N College AI</h2>
+<p>Online Assistant 🟢</p>
+</div>
+
+<div class="header-buttons">
+
+<button id="minBtn">
+<i class="fa-solid fa-minus"></i>
+</button>
+
+<button id="closeBtn">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+</div>
+
+</header>
+
+<!-- Banner Remove pannalam na delete pannidu -->
+<div class="banner">
+<img src="images/campus.jpg" alt="Campus">
+</div>
+
+<div id="chatBox">
+
+<div class="bot-message">
+👋 Welcome to NMSSVNC AI Assistant.<br>
+Ask me anything.
+</div>
+
+</div>
+
+<div class="quick-buttons">
+
+<button onclick="showCourseMenu()">
+Courses
+</button>
+
+<button onclick="quickAsk('Admission details')">
+Admission
+</button>
+
+<button onclick="quickAsk('Hostel facility')">
+Hostel
+</button>
+
+<button onclick="quickAsk('Placement details')">
+Placement
+</button>
+
+</div>
+
+<div class="input-area">
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask anything...">
+
+<button id="micBtn" class="mic-btn">
+<i class="fa-solid fa-microphone"></i>
+</button>
+
+<button onclick="sendMessage()" class="voice-btn">
+<i class="fa-solid fa-wave-square"></i>
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+
+const chatWidget =
+document.getElementById("chatWidget");
+
+const chatToggle =
+document.getElementById("chatToggle");
+
+document.getElementById("minBtn")
+.onclick = () => {
+
+chatWidget.classList.toggle(
+"minimized"
+);
+
+};
+
+document.getElementById("closeBtn")
+.onclick = () => {
+
+chatWidget.style.display =
+"none";
+
+chatToggle.style.display =
+"block";
+
+};
+
+chatToggle.onclick = () => {
+
+chatWidget.style.display =
+"block";
+
+chatToggle.style.display =
+"none";
+
+};
+
+</script>
+
+</body>
+</html>
+
