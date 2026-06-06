@@ -60,7 +60,7 @@ if(
     try{
 
         const response = await fetch(
-            "https://nmssvnc-ai.onrender.com/",
+            "https://nmssvnc-ai.onrender.com/chat",
             {
                 method:"POST",
                 headers:{
