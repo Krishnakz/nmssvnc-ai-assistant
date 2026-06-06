@@ -60,7 +60,7 @@ if(
     try{
 
         const response = await fetch(
-            "http://localhost:3000/chat",
+            "https://nmssvnc-ai.onrender.com/",
             {
                 method:"POST",
                 headers:{
