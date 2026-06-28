@@ -444,8 +444,8 @@ transform:scale(1.08);
 
 .notify-dot{
 position:absolute;
-top:2px;
-right:2px;
+top:-5px;
+right:-5px;
 
 width:24px;
 height:24px;
