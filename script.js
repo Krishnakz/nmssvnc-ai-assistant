@@ -202,37 +202,26 @@ if(chatWidget && chatToggle){
     "closeBtn"
     );
 
-    if(minBtn){
+   if(minBtn){
 
-        minBtn.addEventListener(
-            "click",
-            function(){
+    minBtn.addEventListener(
+        "click",
+        function(){
 
-                chatWidget.classList.toggle(
-                    "minimized"
-                );
+            chatWidget.style.display = "none";
+            chatToggle.style.display = "block";
 
-            }
-        );
-
-    }
-
-    if(closeBtn){
-
-        closeBtn.addEventListener(
-            "click",
-            function(){
-
-                chatWidget.style.display =
-                "none";
-
-                chatToggle.style.display =
-                "block";
-
-            }
-        );
+        }
+    );
+       
 
     }
+
+   if(closeBtn){
+
+    closeBtn.style.display = "none";
+
+}
 
     chatToggle.addEventListener(
         "click",

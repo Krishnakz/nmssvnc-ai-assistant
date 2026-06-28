@@ -22,7 +22,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <!-- Floating Open Button -->
 
 <button id="chatToggle" class="chat-toggle">
-<i class="fa-solid fa-robot"></i>
+
+    <img src="images/ai-bot.png" class="chat-icon" alt="AI Bot">
+
+    <span class="notify-dot">1</span>
+
 </button>
 
 <!-- Chat Window -->
@@ -37,6 +41,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <h2>NMS S V N College AI</h2>
 <p>Online Assistant 🟢</p>
 </div>
+
+<a href="https://nmssvnc.edu.in/360virtualtour/"
+   target="_blank"
+   class="vr-btn"
+   title="360° Virtual Tour">
+
+    <i class="fa-solid fa-vr-cardboard"></i>
+
+</a>
 
 <div class="header-buttons">
 
@@ -106,46 +119,6 @@ placeholder="Ask anything...">
 </div>
 
 <script src="script.js"></script>
-
-<script>
-
-const chatWidget =
-document.getElementById("chatWidget");
-
-const chatToggle =
-document.getElementById("chatToggle");
-
-document.getElementById("minBtn")
-.onclick = () => {
-
-chatWidget.classList.toggle(
-"minimized"
-);
-
-};
-
-document.getElementById("closeBtn")
-.onclick = () => {
-
-chatWidget.style.display =
-"none";
-
-chatToggle.style.display =
-"block";
-
-};
-
-chatToggle.onclick = () => {
-
-chatWidget.style.display =
-"block";
-
-chatToggle.style.display =
-"none";
-
-};
-
-</script>
 
 </body>
 </html>
